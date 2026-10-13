@@ -102,7 +102,7 @@ plt.show()
 
 import requests
 url = ('https://newsapi.org/v2/everything?'
-       'apiKey=38f21e1352734e52b742fea01ce50374')
+       'apiKey=apiKey')
 
 
 # Specify the query and number of returns
