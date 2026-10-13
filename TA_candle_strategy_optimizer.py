@@ -29,7 +29,7 @@ date = pd.date_range(start = '2020-01-1 00:00:00', end = '2021-06-10 00:00:00', 
 
 def chose_timeframe(timeframe):
     if (timeframe == 'daily'):
-        df = pd.read_csv('/Users/manu/Quant Finance/OakTree & Lion/Binance_BTCUSDT_daily.csv')
+        df = pd.read_csv('placeholder/Binance_BTCUSDT_daily.csv')
         df = df[0:1270]
         df.info()
         df.index = df.date
@@ -38,7 +38,7 @@ def chose_timeframe(timeframe):
         df.info()
         return df
     elif (timeframe == 'hourly'):
-        df = pd.read_csv('/Users/manu/Quant Finance/OakTree & Lion/Binance_BTCUSDT_hourly.csv')
+        df = pd.read_csv('/placeholder/Binance_BTCUSDT_hourly.csv')
         df = df[0:4806]
         df.info()
         df.index = df.date
@@ -47,7 +47,7 @@ def chose_timeframe(timeframe):
         df.info()
         return df
     elif (timeframe == 'minute'):
-        df = pd.read_csv('/Users/manu/Quant Finance/OakTree & Lion/Binance_BTCUSDT_minute.csv')
+        df = pd.read_csv('/Users/manu/placeholder/Binance_BTCUSDT_minute.csv')
         df = df[0:752458]
         df.info()
         df.index = df.date
